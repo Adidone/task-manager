@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 Task Generator App
 
-## Getting Started
+A full-stack task management app that uses **Firebase Auth**, **Gemini AI**, and **Prisma** to generate, store, and manage tasks per user.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🔐 User authentication (Firebase)
+- 🧠 Task generation with Gemini AI
+- ✏️ Edit, delete, and manage tasks
+- 👤 User-specific task storage
+- ⚡ Built with Next.js, styled with Tailwind CSS
+
+---
+
+## 🚀 Tech Stack
+
+| Category       | Tech                          |
+|----------------|-------------------------------|
+| Frontend       | Next.js, Tailwind CSS         |
+| Backend        | Node.js, Prisma ORM           |
+| Auth           | Firebase Authentication       |
+| AI Integration | Gemini (Google Generative AI) |
+| DB             | SQLite (development)          |
+
+---
+
+
+
+## 📦 Setup Instructions
+
+### 🔧 Prerequisites
+- Node.js and npm
+- Firebase project (set up Auth)
+- Google Gemini API key
+
+---
+
+### 🛠️ Local Setup
 
 ```bash
+# Clone repo
+git clone https://github.com/Adidone/task-manager.git
+cd task-manager
+
+# Install dependencies
+cd frontend
+npm install
+
+cd ../backend
+npm install
+
+# Start backend
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Start frontend
+cd ../frontend
+npm run dev
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 Edge Cases / Limitations
 
-## Learn More
+- Handles blank inputs and prevents empty task generation
+- Only authenticated users can generate tasks
+- Each user sees only their own tasks
+- Basic validation but no rate-limiting or advanced security implemented
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Live Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check it out here: [https://task-manager-beige-pi.vercel.app](https://task-manager-beige-pi.vercel.app)
