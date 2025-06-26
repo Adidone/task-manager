@@ -69,4 +69,4 @@ npm run dev
 
 ## 🌐 Live Demo
 
-Check it out here: [https://task-manager-beige-pi.vercel.app](https://task-manager-beige-pi.vercel.app)
+Check it out here: https://heartfelt-lamington-4adb72.netlify.app/register
